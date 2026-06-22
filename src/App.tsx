@@ -50,7 +50,7 @@ function App() {
             </button>
             <span>•</span>
             <a
-              href="https://github.com/pratik-prajapati"
+              href="https://github.com/prati2812"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-white transition-colors"
@@ -59,11 +59,11 @@ function App() {
             </a>
             <span>•</span>
             <a
-              href="https://linkedin.com/in/pratik-prajapati"
+              href="https://www.linkedin.com/in/pratik-prajapati-b50744248/"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-white transition-colors"
-            >
+  >
               LinkedIn
             </a>
           </div>

@@ -1,39 +1,41 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { GitFork, Smartphone, CreditCard, Shield, Scan, Sparkles } from 'lucide-react';
+import { GitFork, Smartphone, CreditCard, Shield, Scan, Sparkles, ExternalLink } from 'lucide-react';
 
 const FEATURED_PROJECT = {
   title: 'HelloCrowd',
   subtitle: 'Featured Enterprise Application',
-  desc: 'A high-performance social networking and event check-in platform. Integrates advanced device-side machine learning, secure payments, offline-first sync pipelines, and real-time triggers.',
+  desc: 'A high-performance event engagement and check-in platform. Features real-time social media feed, FaceNet-based facial recognition check-ins, secure payment flows, QR scanning, offline support, live polling, and custom deep linking with pre-install support.',
   tags: ['React Native', 'TensorFlow.js', 'FaceNet', 'Firebase', 'Stripe', 'Paystack', 'Deep Linking'],
+  appStoreUrl: 'https://apps.apple.com/ag/app/hellocrowd-onsite/id6469098861',
+  playStoreUrl: 'https://play.google.com/store/apps/details?id=com.hellocrowd.container',
   features: [
-    { icon: <Smartphone className="w-4 h-4 text-accent-cyan" />, text: 'Social media feed with optimized image cache' },
-    { icon: <CreditCard className="w-4 h-4 text-accent-blue" />, text: 'Multi-processor Stripe and Paystack integrations' },
-    { icon: <Scan className="w-4 h-4 text-emerald-400" />, text: 'FaceNet & TensorFlow.js device facial recognition' },
-    { icon: <Sparkles className="w-4 h-4 text-amber-400" />, text: 'Offline support with local DB sync & Deep Linking' },
-    { icon: <Shield className="w-4 h-4 text-purple-400" />, text: 'QR Check-In & Firebase Realtime Notifications' },
+    { icon: <Smartphone className="w-4 h-4 text-accent-cyan" />, text: 'Real-time social media feed with likes, comments & in-app document viewing' },
+    { icon: <CreditCard className="w-4 h-4 text-accent-blue" />, text: 'Stripe & Paystack for session booking and secure donations' },
+    { icon: <Scan className="w-4 h-4 text-emerald-400" />, text: 'FaceNet & TensorFlow.js on-device facial recognition check-ins' },
+    { icon: <Sparkles className="w-4 h-4 text-amber-400" />, text: 'Offline support, live polling, session feedback & deep linking' },
+    { icon: <Shield className="w-4 h-4 text-purple-400" />, text: 'Native Android printer discovery & badge printing via React Native bridge' },
   ],
 };
 
 const ADDITIONAL_PROJECTS = [
   {
     title: 'Sorting Visualizer',
-    desc: 'An interactive web dashboard visualizing step-by-step sorting algorithm processes. Highly performant with controls for animation speed and array sizes.',
-    tags: ['React', 'TypeScript', 'CSS Transitions', 'Algorithms'],
-    github: 'https://github.com/pratik-prajapati',
+    desc: 'A mobile app built with Java to visualize sorting algorithms in real-time. Features interactive UI, optimized animations, and educational walkthroughs of Merge Sort, Quick Sort, and Heap Sort.',
+    tags: ['Java', 'Android', 'Animations', 'Algorithms'],
+    github: 'https://github.com/prati2812',
   },
   {
-    title: 'Women Safety App',
-    desc: 'A critical utility mobile application featuring rapid SMS coordinates sharing, shake-to-alert triggers, and ambient audio recording.',
-    tags: ['React Native', 'GPS Tracking', 'Native SMS', 'Background Services'],
-    github: 'https://github.com/pratik-prajapati',
+    title: 'Nari – Women Safety App',
+    desc: 'A women\'s security app built with Java & Firebase. Enables live location sharing to emergency contacts, police, and hospitals via the volume button. Integrates Google Maps API for nearest police station & hospital detection.',
+    tags: ['Java', 'Android', 'Firebase', 'Google Maps API'],
+    github: 'https://github.com/prati2812',
   },
   {
-    title: 'Expense Manager',
-    desc: 'A personal finance dashboard. Features transaction tracking, custom category categorization, and local SQLite data backups.',
-    tags: ['React Native', 'SQLite', 'Reanimated 2', 'Data Visualizations'],
-    github: 'https://github.com/pratik-prajapati',
+    title: 'Equalizer – Expense Manager',
+    desc: 'A group expense management app built with Java & Firebase. Features Firebase Authentication, intuitive group expense tracking, automated payment calculations, and reminder notifications for pending payments.',
+    tags: ['Java', 'Android', 'Firebase Auth', 'Expense Tracking'],
+    github: 'https://github.com/prati2812',
   },
 ];
 
@@ -110,15 +112,33 @@ export const Projects: React.FC = () => {
               </div>
 
               {/* Actions */}
-              <div className="flex items-center gap-4 pt-4">
+              <div className="flex flex-wrap items-center gap-4 pt-4">
                 <a
-                  href="https://github.com/pratik-prajapati"
+                  href={FEATURED_PROJECT.appStoreUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="px-5 py-2.5 rounded-xl text-xs font-display font-semibold text-white bg-gradient-to-r from-accent-blue to-accent-cyan hover:opacity-90 hover:shadow-[0_0_20px_rgba(34,211,238,0.3)] transition-all duration-300 flex items-center gap-2 cursor-pointer"
+                >
+                  <ExternalLink className="w-4 h-4" />
+                  App Store
+                </a>
+                <a
+                  href={FEATURED_PROJECT.playStoreUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="px-5 py-2.5 rounded-xl text-xs font-display font-semibold text-white bg-gradient-to-r from-accent-blue to-accent-cyan hover:opacity-90 hover:shadow-[0_0_20px_rgba(34,211,238,0.3)] transition-all duration-300 flex items-center gap-2 cursor-pointer"
+                >
+                  <ExternalLink className="w-4 h-4" />
+                  Play Store
+                </a>
+                <a
+                  href="https://github.com/prati2812"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="px-5 py-2.5 rounded-xl text-xs font-display font-semibold text-white bg-white/5 border border-white/10 hover:bg-white/10 backdrop-blur-md transition-all duration-300 flex items-center gap-2 cursor-pointer"
                 >
                   <GitFork className="w-4 h-4" />
-                  View Repository
+                  View GitHub
                 </a>
               </div>
 

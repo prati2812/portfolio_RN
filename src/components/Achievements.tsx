@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Award, Smartphone, Users, Zap, Cloud } from 'lucide-react';
+import { Award, Smartphone, Users, Zap, Cloud, Code2 } from 'lucide-react';
 
 export const Achievements: React.FC = () => {
   return (
@@ -144,6 +144,41 @@ export const Achievements: React.FC = () => {
               <p className="text-secondary-text text-sm leading-relaxed">
                 Direct engagement with clients for scoping requirements, defining milestones, sprint planning, and system demonstration.
               </p>
+            </div>
+          </motion.div>
+
+          {/* Card 6: Certifications & Competitive Programming (Wide Card - span 3 on large screens) */}
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: '-50px' }}
+            transition={{ duration: 0.6, delay: 0.5 }}
+            className="md:col-span-2 lg:col-span-3 rounded-3xl border border-white/10 glass-card p-8 flex flex-col md:flex-row justify-between items-start md:items-center gap-6 shadow-xl relative overflow-hidden group glass-card-hover"
+          >
+            <div className="space-y-4 max-w-xl">
+              <span className="text-xs font-display font-bold uppercase tracking-wider text-accent-cyan">Certifications & Algorithms</span>
+              <h3 className="text-3xl font-display font-extrabold text-white tracking-tight leading-none flex items-center gap-2">
+                Java & Problem Solving
+              </h3>
+              <p className="text-secondary-text text-sm leading-relaxed">
+                Earned the Java Certification from HackerRank. Active practitioner of Data Structures & Algorithms, regularly solving challenges on platforms like LeetCode and HackerRank to build optimized, high-performance logic.
+              </p>
+            </div>
+            
+            <div className="flex items-center gap-4 bg-white/5 border border-white/10 px-5 py-4 rounded-2xl shadow-inner self-stretch md:self-auto justify-center">
+              <div className="flex flex-col items-center">
+                <div className="w-12 h-12 rounded-xl bg-slate-900 flex items-center justify-center border border-white/10 shadow-lg">
+                  <Code2 className="w-6 h-6 text-accent-cyan" />
+                </div>
+                <span className="text-[10px] font-display font-bold text-white/60 mt-1 uppercase">HackerRank</span>
+              </div>
+              <div className="w-px h-8 bg-white/10" />
+              <div className="flex flex-col items-center">
+                <div className="w-12 h-12 rounded-xl bg-slate-900 flex items-center justify-center border border-white/10 shadow-lg">
+                  <Code2 className="w-6 h-6 text-amber-500" />
+                </div>
+                <span className="text-[10px] font-display font-bold text-white/60 mt-1 uppercase">LeetCode</span>
+              </div>
             </div>
           </motion.div>
 

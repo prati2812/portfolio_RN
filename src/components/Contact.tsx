@@ -6,26 +6,26 @@ const SOCIAL_LINKS = [
   {
     name: 'Email',
     icon: <Mail className="w-5 h-5 text-accent-cyan" />,
-    url: 'mailto:pratik.prajapati.dev@gmail.com',
-    value: 'pratik.prajapati.dev@gmail.com',
+    url: 'mailto:pratikprajapati8733@gmail.com',
+    value: 'pratikprajapati8733@gmail.com',
   },
   {
     name: 'GitHub',
     icon: <GitFork className="w-5 h-5 text-white" />,
-    url: 'https://github.com/pratik-prajapati',
-    value: 'github.com/pratik-prajapati',
+    url: 'https://github.com/prati2812',
+    value: 'github.com/prati2812',
   },
   {
     name: 'LinkedIn',
     icon: <Link className="w-5 h-5 text-accent-blue" />,
-    url: 'https://linkedin.com/in/pratik-prajapati',
+    url: 'https://www.linkedin.com/in/pratik-prajapati-b50744248/',
     value: 'linkedin.com/in/pratik-prajapati',
   },
   {
     name: 'LeetCode',
     icon: <Code2 className="w-5 h-5 text-amber-500" />,
-    url: 'https://leetcode.com/pratik-prajapati',
-    value: 'leetcode.com/pratik-prajapati',
+    url: 'https://leetcode.com/u/pratik28_12/',
+    value: 'leetcode.com/u/pratik28_12',
   },
 ];
 
