@@ -113,7 +113,7 @@ export const Hero: React.FC = () => {
             </button>
 
             <a
-              href="/resume.pdf"
+              href="https://drive.google.com/file/d/1yKvwjin6xzHhtiZVMgt0d-Abe94etSL2/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
               className="px-6 py-3.5 rounded-xl font-display font-semibold text-sm text-white border border-white/10 bg-white/5 hover:bg-white/10 backdrop-blur-md transition-all duration-300 flex items-center gap-2 cursor-pointer shadow-inner"
